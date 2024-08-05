@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+}
+header{
+color: blue;
+    margin: auto;
+    background-color: yellow;
+    width: 200px;
+    border-radius: 10px;
+    animation: pulse  linear 1.5s infinite;
+    
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .square {
+        width: 30%;
+        max-width: 80px;
+        height: 80px;
+    }
+    
+    header {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .square {
+        width: 40%;
+        max-width: 70px;
+        height: 70px;
+    }
+    
+    header {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+h1 {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+}
+.stage{
+    background-image: url("./um-padrao-simples-de-escola-sem-costura-com-um-jogo-da-velha-fundo-preto-e-branco_172597-451.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 600px;
+    background-color: beige;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    margin: 10px;
+    border: solid 1px gray;
+    display: inline-block;
+}
+
+.o {
+    position: relative;
+}
+
+.o:after {
+    position: absolute;
+    content: "\1F9D2";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x:after {
+    position: absolute;
+    content: "\1F469";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+button {
+ 
+ margin: auto;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: blue;
+}
